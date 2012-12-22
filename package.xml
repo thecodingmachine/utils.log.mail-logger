@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:noNamespaceSchemaLocation="http://xsd.mouf-php.com/packages.xsd">
+	<displayName>Mail Logger</displayName>
+	<shortDescription>This package contains a logger that sends a mail when a log message is received.</shortDescription>
+	<docUrl></docUrl>
+	<logo>logo.png</logo>
+	<dependencies>
+		<dependency>
+			<group>utils/log</group>
+			<name>log_interface</name>
+			<version>&gt;=1.1</version>
+		</dependency>
+		<dependency>
+			<group>utils/mailer</group>
+			<name>mail-interface</name>
+			<version>&gt;=1.0</version>
+		</dependency>
+	</dependencies>
+	<requires>
+		<require>ErrorMail.php</require>
+		<require>MailLogger.php</require>
+	</requires>
+	<install>
+		<file>install.php</file>
+	</install>
+</package>

@@ -1,0 +1,37 @@
+{
+    "name": "mouf/utils.log.mail-logger",
+    "description": "This package contains a logger that sends a mail when a log message is received.",
+    "keywords": ["mail logger", "mouf"],
+    "homepage": "https://github.com/thecodingmachine/utils.log.mail-logger",
+    "type": "mouf-library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "David Négrier",
+            "email": "d.negrier@thecodingmachine.com",
+            "homepage": "http://mouf-php.com"
+        }
+    ],
+    "require": {
+    	"php": ">=5.3.0",
+    	"mouf/mouf-installer": ">=2.0.0-dev",
+        "mouf/utils.log.log-interface": "~2.0",
+        "mouf/utils.mailer.mail-interface": "~2.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "Mouf": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "extra": {
+	     "mouf": {
+	     	"install": [
+	    		{
+	    			"type": "file",
+	    			"file": "src/install.php"
+	    		}
+    		]
+		}
+    }
+}
